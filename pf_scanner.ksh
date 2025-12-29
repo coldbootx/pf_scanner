@@ -45,7 +45,7 @@ function pause {
 # Function to display usage message
 function usagemsg_displaymsg {
   print "
-${BLUE}Program:${NC} ${YELLOW}pf_scanner.ksh V-2.0${NC}
+${BLUE}Program:${NC} ${YELLOW}pf_scanner.ksh V-1.0${NC}
 ${BLUE}Author:${NC} ${YELLOW}Coldboot${NC}
 ${BLUE}License:${NC} ${YELLOW}MIT.${NC}
 "
@@ -431,4 +431,5 @@ log_msg info "3. Check PF status: pfctl -s rules | grep $PF_TABLE"
 
 log_msg success "PF log analysis completed successfully"
 log_msg info "Report saved to: $REPORT_FILE"
+
 log_msg info "Blocklist saved to: $BLOCKLIST_FILE"
